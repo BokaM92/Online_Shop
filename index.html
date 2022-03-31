@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>CarStore</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <a href="">Car Store</a>
+            </div>
+            <div class="nav_bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#store">Store <i class="fa fa-shopping-cart" style="font-size: 18px;"></i></a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- sidebar start mobile view -->
+            <span id="ham_menu" class="ham_menu">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+                <a href="#">Home</a>
+                <a href="#store">Store <i class="fa fa-shopping-cart" style="font-size: 18px;"></i></a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- sidebar end mobile view -->
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="main">
+            <picture>
+                <source media="(min-width:1100px)" srcset="img/customers-browsing-big.jpg">
+                <source media="(min-width:650px)" srcset="img/customers-browsing-medium.png">
+                <source media="(min-width:425px)" srcset="img/customers-browsing-small.jpg">
+                <img src="img/customers-browsing-xsmall.jpg" alt="main_img">
+            </picture>
+            <div class="main_pult">
+                <h1>Find your next car today</h1>
+                <p><strong>Special Offers</strong></p>
+                <a href="#store" class="btn btn-one"><span>Go to store &#8594;</span></a>
+            </div>
+        </div>
+        <div id="about">
+            <div class="scroll_holder"></div>
+            <h2>How Car Store Works</h2>
+            <div class="about_holder">
+                <div class="a_h_2">
+                    <div class="about_cart">
+                        <img src="img/your-car-480x270px.png" alt="your-car">
+                        <h3>Your Car, Your Way</h3>
+                        <p>Whether you’re an online car shopper, a pop in store person, or like a bit of both, the
+                            choiceis yours</p>
+                    </div>
+                    <div class="about_holder">
+                        <div class="about_cart">
+                            <img src="img/personal-advisors-480x270px.png" alt="your-car">
+                            <h3>Personal Advisors</h3>
+                            <p>Our trained Personal Advisors are here to assist you online and in-store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="a_h_2">
+                    <div class="about_holder">
+                        <div class="about_cart">
+                            <img src="img/approved-480x270px.png" alt="your-car">
+                            <h3>CarStore Approved</h3>
+                            <p>All our cars pass a 123-point inspection and come with a 3-month guarantee</p>
+                        </div>
+                    </div>
+                    <div class="about_holder">
+                        <div class="about_cart">
+                            <img src="img/14-day-mbg-480x270px.png" alt="your-car">
+                            <h3>14-Day Money Back Guarantee</h3>
+                            <p>Two weeks to make absolutely sure it's the right car for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="store">
+            <div class="scroll_holder"></div>
+            <div class="store_title">
+                <h2>Find your car</h2>
+                <ul>
+                    <li class="submenu">
+                        <i class="fa fa-shopping-cart" style="font-size: 30px; cursor: pointer;"></i>
+                        <p id="car-number" style="cursor: pointer;">Empty</p>
+                        <div id="shopping-cart">
+                            <table id="cart-content">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="clear-cart">Clear Cart</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="store_holder">
+                <div id="brands" class="brands">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="cars"><span data-target="cars">All</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="volkswagen"><span
+                                    data-target="volkswagen">Volkswagen &#8594;</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="audi"><span data-target="audi">Audi
+                                    &#8594;</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="mercedes"><span data-target="mercedes">Mercedes
+                                    Benz
+                                    &#8594;</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="renault"><span data-target="renault">Renault
+                                    &#8594;</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="citroen"><span data-target="citroen">Citroen
+                                    &#8594;</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-one" data-target="porshe"><span data-target="porshe">Porshe
+                                    &#8594;</span></a>
+                        </li>
+                    </ul>
+                    <div class="advertisementing">
+                        <div class="advertisement">
+                            <img src="img/ad=here.jpg" alt="">
+                        </div>
+                        <div class="advertisement">
+                            <img src="img/ad=here.jpg" alt="">
+                        </div>
+                        <div class="advertisement">
+                            <img src="img/ad=here.jpg" alt="">
+                        </div>
+                        <div class="advertisement">
+                            <img src="img/ad=here.jpg" alt="">
+                        </div>
+                        <div class="advertisement">
+                            <img src="img/ad=here.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="brands_pult">
+                    <form action="#" id="search" method="post" class="form">
+                        <input class="u-full-width" type="text" placeholder="Search here " id="search-cars" />
+                        <button type="submit" id="submit-search-cars" class="submit-search-cars">&#128269;</button>
+                    </form>
+                    <!-- select menu start mobile view -->
+                    <div class="form-brands-holder">
+                        <div id="form-brands" class="form-brands">
+                            <div class="dropbtn">Select car mark 🔽</div>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" data-target="cars" value="cars">All</a>
+                                <a href="#" data-target="volkswagen" value="volkswagen">Volkswagen</a>
+                                <a href="#" data-target="mercedes" value="mercedes">Mercedes-Benz</a>
+                                <a href="#" data-target="renault" value="renault">Renault</a>
+                                <a href="#" data-target="citroen" value="citroen">Citroen</a>
+                                <a href="#" data-target="porshe" value="porshe">Porshe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- select menu start mobile view -->
+                    <div class="brands_store" id="brands_store">
+                        <!-- card start -->
+                        <!-- volkswagen -->
+                        <div class="cars volkswagen">
+                            <div class="card">
+                                <img src="img/golf-8.jpg" alt="car">
+                                <h3>Golf</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="1">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars volkswagen">
+                            <div class="card">
+                                <img src="img/touareg.jpg" alt="car">
+                                <h3>Touareg</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="2">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars volkswagen">
+                            <div class="card">
+                                <img src="img/polo.jpg" alt="car">
+                                <h3>Polo</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="3">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- audi -->
+                        <div class="cars audi">
+                            <div class="card">
+                                <img src="img/a5.jpg" alt="car">
+                                <h3>A5</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="4">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars audi">
+                            <div class="card">
+                                <img src="img/a8.jpg" alt="car">
+                                <h3>A8</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="5">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars audi">
+                            <div class="card">
+                                <img src="img/Q8.jpg" alt="car">
+                                <h3>Q8</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="6">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- mercedes -->
+                        <div class="cars mercedes">
+                            <div class="card">
+                                <img src="img/s.jpg" alt="car">
+                                <h3>S-Class</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="7">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars mercedes">
+                            <div class="card">
+                                <img src="img/cc.jpg" alt="car">
+                                <h3>C-Class</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="8">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars mercedes">
+                            <div class="card">
+                                <img src="img/ecabr.jpg" alt="car">
+                                <h3>E-Class Cabriolet</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="9">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- renault -->
+                        <div class="cars renault">
+                            <div class="card">
+                                <img src="img/clio.jpg" alt="car">
+                                <h3>Clio</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="10">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars renault">
+                            <div class="card">
+                                <img src="img/megane.jpg" alt="car">
+                                <h3>Megane</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="11">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars renault">
+                            <div class="card">
+                                <img src="img/electric.jpg" alt="car">
+                                <h3>Electric</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="12">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- citroen -->
+                        <div class="cars citroen">
+                            <div class="card">
+                                <img src="img/c1.jpg" alt="car">
+                                <h3>C1</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="13">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars citroen">
+                            <div class="card">
+                                <img src="img/c3.jpg" alt="car">
+                                <h3>C3</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="14">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars citroen">
+                            <div class="card">
+                                <img src="img/c4.png" alt="car">
+                                <h3>C4</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="15">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- porshe -->
+                        <div class="cars porshe">
+                            <div class="card">
+                                <img src="img/car911.jpg" alt="car">
+                                <h3>911 Carerra</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="16">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars porshe">
+                            <div class="card">
+                                <img src="img/panamera.jpg" alt="car">
+                                <h3>Panamera</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="17">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <div class="cars porshe">
+                            <div class="card">
+                                <img src="img/cayen.jpg" alt="car">
+                                <h3>Cayenne</h3>
+                                <p class="price">$10 000</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum culpa voluptatibus
+                                    adipisci facilis,
+                                    sequilibero commodi</p>
+                                <button href="#" class="add-to-cart" data-id="18">Add to Cart <i
+                                        class="fa fa-shopping-cart" style="font-size: 15px;"></i></button>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="scroll_holder"></div>
+            <div class="contact_title">
+                <h2>GET IN TOUCH</h2>
+                <p>WE ARE ALWAYS OPEN TO ANSWER ON YOUR QUESTIONS</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <dl>
+                        <dt>Phone</dt>
+                        <dd><i class="fab fa-whatsapp"></i> <a href="tel: +387 65 230 120" class="w"> +387 65 230
+                                120</a></dd>
+                        <dt>Email</dt>
+                        <dd><i class="far fa-envelope"></i> <a href="mailto:milanovicbojan@yahoo.com"
+                                class="w">milanovicbojan@yahoo.com</a></dd>
+                    </dl>
+                    <div class="social_p">
+                        <p>Social Profiles</p>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <p>If you have any questions.. please fill out the form below and we will reply you shortly.</p>
+                    <form id="form">
+                        <div class="form-group">
+                            <div class="input-wraper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" value="" placeholder="YOUR NAME" id="name">
+                            </div>
+                            <div class="input-wraper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" value="" placeholder="YOUR EMAIL" id="email">
+                            </div>
+                        </div>
+                        <div class="input-wraper">
+                            <i class="fas fa-comments"></i>
+                            <textarea name="msg" value="" placeholder="YOUR MESSAGE" id="msg"></textarea>
+                        </div>
+                        <div class="btn-group">
+                            <button type="submit" class="btn btn-one">
+                                <span><i class="fas fa-paper-plane"></i> SEND MESSAGE</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map" style="padding: 50px 0 0 0;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1190.909641920992!2d17.192198925951597!3d44.77109136844792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e03767fa602d5%3A0xfe643802625d781a!2sGospodska%20Ulica!5e0!3m2!1sbs!2sba!4v1636298023970!5m2!1sbs!2sba"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div class="sponsors">
+
+            <h2>OUR SPONSORS</h2>
+            <div class="sponsors_holder">
+                <img src="img/sponsors1.svg" alt="sponsor">
+                <img src="img/sponsors2.svg" alt="sponsor">
+                <img src="img/sponsors3.svg" alt="sponsor">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="copyright">
+                <span>Car Store © 2022. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
